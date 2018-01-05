@@ -29,7 +29,7 @@ class Registration(MappedClass):
     password = FieldProperty(s.String, required=True)
     code = FieldProperty(s.String)
     activated = FieldProperty(s.DateTime)
-    extras = FieldProperty(s.Anything)
+    extras = FieldProperty(s.Anything, if_missing=None)
 
     user_id = ForeignIdProperty(app_model.User)
 
