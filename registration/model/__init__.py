@@ -2,6 +2,8 @@
 from tg import config
 from tgext.pluggable import PluggableSession
 
+__all__ = ["Registration"]
+
 DBSession = PluggableSession()
 
 Registration = None
